@@ -32,8 +32,7 @@ const correspondingTestsForAppFiles = [
     return `${newPath}/${name}`;
   });
 
-// New app files should get new test files
-// Allow warning instead of failing if you say "Skip New Tests" inside the body, make it explicit.
+// Any updated/created files should be tested
 const testFilesThatDontExist = correspondingTestsForAppFiles.filter((f) => {
   const exists = fs.existsSync(f);
 
@@ -42,7 +41,7 @@ const testFilesThatDontExist = correspondingTestsForAppFiles.filter((f) => {
 
 if (testFilesThatDontExist.length > 0) {
   const output = `Missing Test Files:
-  ${testFilesThatDontExist.map((f) => `  - [ ] \`${f}\``).join('\n')}`;
+${testFilesThatDontExist.map((f) => `  - [ ] \`${f}\``).join('\n')}`;
 
   warn(output);
 }
