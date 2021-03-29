@@ -10,9 +10,9 @@ if (packageChanged) {
 
 const bigPRThreshold = 0;
 if (danger.github.pr.additions > bigPRThreshold) {
-  warn(':exclamation: Massive PR (' + ++errorCount + ')');
+  warn(':exclamation: Massive PR :cry:');
   markdown(
-    `> (${errorCount}) : Pull Request size seems relatively large. Is it possible to separate this into smaller PRs to help with faster, easier review?`
+    `> Pull Request size seems relatively large. Is it possible to separate this into smaller PRs to help with faster, easier review?`
   );
 }
 
