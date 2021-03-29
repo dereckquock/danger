@@ -24,7 +24,12 @@ const correspondingTestsForAppFiles = [
   ...danger.git.modified_files,
   ...danger.git.created_files,
 ]
-  .filter((f) => f.slice('-3') === '.js')
+  .filter((f) => {
+    const isJS = f.slice('-3') === '.js';
+    const isNotTest = !f.includes('.test');
+
+    return isJS && isNotTest;
+  })
   .map((f) => {
     const newPath = path.dirname(f);
     const name = path.basename(f).replace('.js', '.test.js');
