@@ -13,10 +13,9 @@ if (packageChanged) {
 
 const bigPRThreshold = 0;
 if (danger.github.pr.additions > bigPRThreshold) {
-  warn(':exclamation: Massive PR :cry:');
-  markdown(
-    `> Pull Request size seems relatively large. Is it possible to separate this into smaller PRs to help with faster, easier review?`
-  );
+  warn(`:exclamation: Massive PR :cry:
+**Pull Request size seems relatively large.**
+> Is it possible to separate this into smaller PRs to help with faster, easier review?`);
 }
 
 // Check that every file touched has a corresponding test file
@@ -45,7 +44,7 @@ const testFilesThatDontExist = correspondingTestsForAppFiles.filter((f) => {
 });
 
 if (testFilesThatDontExist.length > 0) {
-  const output = `Missing Test Files:
+  const output = `🧪 Missing Test Files:
 ${testFilesThatDontExist.map((f) => `  - [ ] \`${f}\``).join('\n')}`;
 
   warn(output);
