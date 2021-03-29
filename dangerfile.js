@@ -13,7 +13,8 @@ if (packageChanged) {
 
 const bigPRThreshold = 0;
 if (danger.github.pr.additions > bigPRThreshold) {
-  warn(`:exclamation: Massive PR :cry: Pull Request size seems relatively large
+  warn(`:exclamation: Massive PR :cry:
+Pull Request size seems relatively large.
 > Is it possible to separate this into smaller PRs to help with faster, easier review?`);
 }
 
