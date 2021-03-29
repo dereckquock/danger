@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dereckquock/danger#readme",
   "devDependencies": {
-    "danger": "^10.6.4"
+    "danger": "^10.6.4",
+    "danger-plugin-flow": "^1.5.0"
   }
 }
