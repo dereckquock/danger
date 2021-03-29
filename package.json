@@ -1,0 +1,25 @@
+{
+  "name": "danger",
+  "version": "1.0.0",
+  "description": "danger-js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dereckquock/danger.git"
+  },
+  "keywords": [
+    "danger-js"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dereckquock/danger/issues"
+  },
+  "homepage": "https://github.com/dereckquock/danger#readme",
+  "devDependencies": {
+    "danger": "^10.6.4"
+  }
+}
