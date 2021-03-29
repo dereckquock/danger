@@ -14,6 +14,7 @@ It's easy to test locally by following this guide to [Working on your Dangerfile
 
 1. Set up a [personal access token](https://github.com/settings/tokens)
 2. Test a PR
-    ```sh
-    yarn danger pr https://github.com/danger/danger-js/pull/100
-    ```
+
+   ```sh
+   yarn danger pr https://github.com/danger/danger-js/pull/100
+   ```
