@@ -1,3 +1,5 @@
+<img width="942" alt="danger" src="https://user-images.githubusercontent.com/1015884/114778221-6d6cd100-9d29-11eb-86a0-8382e2ae4606.png">
+
 # danger
 
 Example repo that uses [Danger JS](https://danger.systems/js/) to help with automating recurring PR review chores.
