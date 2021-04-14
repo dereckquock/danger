@@ -6,7 +6,14 @@ Example repo that uses [Danger JS](https://danger.systems/js/) to help with auto
 
 ### GitHub Action
 
-Using the [Danger JS GitHub Action](https://github.com/marketplace/actions/danger-js-action), it's super easy to add to any project.
+Just add a step to run danger:
+
+```sh
+ - name: Danger JS
+   run: npx danger ci
+   env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
 
 ### Testing locally
 
