@@ -11,9 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: yarn
       - name: Danger JS Action
-        uses: danger/danger-js@9.1.8
+        run: npx danger ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
