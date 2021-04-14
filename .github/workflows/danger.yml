@@ -16,6 +16,4 @@ jobs:
       - name: Danger JS Action
         uses: danger/danger-js@9.1.8
         env:
-          # babel transformation causes issues: https://github.com/danger/danger-js/issues/557#issuecomment-664851950
-          DANGER_DISABLE_TRANSPILATION: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

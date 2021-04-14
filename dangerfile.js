@@ -1,7 +1,7 @@
-const { danger, message, schedule, warn } = require('danger');
-const flow = require('danger-plugin-flow').default;
-const path = require('path');
-const fs = require('fs');
+import path from 'path';
+import fs from 'fs';
+import { danger, message, schedule, warn } from 'danger';
+import flow from 'danger-plugin-flow';
 
 // Warns if there are changes to package.json
 const packageChanged = danger.git.modified_files.includes('package.json');
